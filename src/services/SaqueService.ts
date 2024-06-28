@@ -20,9 +20,6 @@ export class SaqueService {
       resultado[cedula.toString()] = quantidade;
       valorRestante %= cedula;
     }
-    if (valorRestante !== 0) {
-      throw new Error('Valor não pode ser atendido com as cédulas disponíveis.');
-    }
 
     return resultado;
   }
